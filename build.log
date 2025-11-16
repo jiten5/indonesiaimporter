@@ -1,0 +1,99 @@
+
+> global-trade-intelligence-platform@0.1.0 build
+> next build
+
+   ▲ Next.js 16.0.3 (Turbopack)
+   - Experiments (use with caution):
+     ✓ optimizeCss
+
+   Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 3 errors:
+./components/ui/Input.tsx:61:9
+Parsing ecmascript source code failed
+[0m [90m 59 |[39m               {rightIcon}
+ [90m 60 |[39m         [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+[31m[1m>[22m[39m[90m 61 |[39m         {error [33m&&[39m [33m<[39m[33mp[39m className[33m=[39m[32m"mt-1.5 text-sm text-error"[39m[33m>[39m{error}[33m<[39m[33m/[39m[33mp[39m[33m>[39m}
+ [90m    |[39m         [31m[1m^[22m[39m
+ [90m 62 |[39m         {helperText [33m&&[39m [33m![39merror [33m&&[39m (
+ [90m 63 |[39m           [33m<[39m[33mp[39m className[33m=[39m[32m"mt-1.5 text-sm text-text-tertiary"[39m[33m>[39m{helperText}[33m<[39m[33m/[39m[33mp[39m[33m>[39m
+ [90m 64 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+
+Expected '</', got '{'
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/Input.tsx [Client Component Browser]
+    ./components/ui/index.ts [Client Component Browser]
+    ./components/layout/Header.tsx [Client Component Browser]
+    ./components/layout/Header.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/Input.tsx [Client Component SSR]
+    ./components/ui/index.ts [Client Component SSR]
+    ./components/layout/Header.tsx [Client Component SSR]
+    ./components/layout/Header.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+
+
+./components/ui/Select.tsx:43:8
+Parsing ecmascript source code failed
+[0m [90m 41 |[39m         {helperText [33m&&[39m [33m![39merror [33m&&[39m (
+ [90m 42 |[39m           [33m<[39m[33mp[39m className[33m=[39m[32m"mt-1.5 text-sm text-text-tertiary"[39m[33m>[39m{helperText}[33m<[39m[33m/[39m[33mp[39m[33m>[39m
+[31m[1m>[22m[39m[90m 43 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 44 |[39m     )[33m;[39m
+ [90m 45 |[39m   }
+ [90m 46 |[39m )[33m;[39m[0m
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/Select.tsx [Client Component Browser]
+    ./components/ui/index.ts [Client Component Browser]
+    ./components/products/ProductCard.tsx [Client Component Browser]
+    ./components/products/ProductCard.tsx [Server Component]
+    ./app/products/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/Select.tsx [Client Component SSR]
+    ./components/ui/index.ts [Client Component SSR]
+    ./components/products/ProductCard.tsx [Client Component SSR]
+    ./components/products/ProductCard.tsx [Server Component]
+    ./app/products/page.tsx [Server Component]
+
+
+./components/ui/Textarea.tsx:36:8
+Parsing ecmascript source code failed
+[0m [90m 34 |[39m         {helperText [33m&&[39m [33m![39merror [33m&&[39m (
+ [90m 35 |[39m           [33m<[39m[33mp[39m className[33m=[39m[32m"mt-1.5 text-sm text-text-tertiary"[39m[33m>[39m{helperText}[33m<[39m[33m/[39m[33mp[39m[33m>[39m
+[31m[1m>[22m[39m[90m 36 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m    |[39m        [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 37 |[39m     )[33m;[39m
+ [90m 38 |[39m   }
+ [90m 39 |[39m )[33m;[39m[0m
+
+Unterminated regexp literal
+
+Import traces:
+  Client Component Browser:
+    ./components/ui/Textarea.tsx [Client Component Browser]
+    ./components/ui/index.ts [Client Component Browser]
+    ./components/home/CTASection.tsx [Client Component Browser]
+    ./components/home/CTASection.tsx [Server Component]
+    ./app/products/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ui/Textarea.tsx [Client Component SSR]
+    ./components/ui/index.ts [Client Component SSR]
+    ./components/home/CTASection.tsx [Client Component SSR]
+    ./components/home/CTASection.tsx [Server Component]
+    ./app/products/page.tsx [Server Component]
+
+
+    at <unknown> (./components/ui/Input.tsx:61:9)
+    at <unknown> (./components/ui/Select.tsx:43:8)
+    at <unknown> (./components/ui/Textarea.tsx:36:8)
